@@ -20,7 +20,7 @@ it, simply add the following line to your Podfile:
 
 ## Author
 
-Joan Romano, joanromano@gmail.com
+[Kerad Games](http://www.keradgames.org)
 
 ## License
 
