@@ -20,7 +20,7 @@ it, simply add the following line to your Podfile:
 
 ## Author
 
-[Kerad Games](http://www.keradgames.org)
+[Kerad Games](http://www.keradgames.com)
 
 ## License
 
