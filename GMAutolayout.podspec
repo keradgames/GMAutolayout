@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "GMAutolayout"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "Category on UIView to ease your life with AutoLayout constraints"
   s.homepage         = "https://github.com/keradgames/GMAutolayout"
   s.license          = 'MIT'
