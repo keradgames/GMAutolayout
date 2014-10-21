@@ -18,6 +18,8 @@ typedef NS_ENUM(NSUInteger, UIViewLayoutDirection){
 
 + (instancetype)newAutolayoutView;
 
+- (void)removeOwnAndSubviewsContraints;
+
 - (void)constrainToSize:(CGSize)size;
 - (void)constrainToWidth:(CGFloat)width;
 - (void)constrainToHeight:(CGFloat)height;

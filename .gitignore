@@ -23,5 +23,5 @@ DerivedData
 .bundle
 
 #CocoaPods
-Pods
-Podfile.lock
+Example/Pods
+Example/Podfile.lock

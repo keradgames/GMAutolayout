@@ -23,6 +23,18 @@ CGFloat const GMAutolayoutStandardFixedViewToSuperviewSpace = 20.0f;
     return view;
 }
 
+#pragma mark - Remove constraints
+
+- (void)removeOwnAndSubviewsContraints
+{
+    self.translatesAutoresizingMaskIntoConstraints = NO;
+    [self removeConstraints:self.constraints];
+    [self.subviews enumerateObjectsUsingBlock:^(UIView *subview, NSUInteger idx, BOOL *stop) {
+        subview.translatesAutoresizingMaskIntoConstraints = NO;
+        [subview removeConstraints:subview.constraints];
+    }];
+}
+
 #pragma mark - Size constraining
 
 - (void)constrainToSize:(CGSize)size
