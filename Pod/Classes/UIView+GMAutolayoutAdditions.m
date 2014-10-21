@@ -64,6 +64,11 @@ CGFloat const GMAutolayoutStandardFixedViewToSuperviewSpace = 20.0f;
     [self addConstraint:[NSLayoutConstraint constraintWithItem:firstSubview attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:secondSubview attribute:NSLayoutAttributeWidth multiplier:multiplier constant:0.0]];
 }
 
+- (void)equalHeightOfSubview:(UIView *)firstSubview withSubview:(UIView *)secondSubview multiplier:(CGFloat)multiplier
+{
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:firstSubview attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:secondSubview attribute:NSLayoutAttributeHeight multiplier:multiplier constant:0.0]];
+}
+
 #pragma mark - Align in superview constraining
 
 - (void)alignLeftInSuperview

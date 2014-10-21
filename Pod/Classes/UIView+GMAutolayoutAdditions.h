@@ -23,6 +23,7 @@ typedef NS_ENUM(NSUInteger, UIViewLayoutDirection){
 - (void)constrainToHeight:(CGFloat)height;
 - (void)equalSizeOfSubview:(UIView *)firstSubview withSubview:(UIView *)secondSubview;
 - (void)equalWidthOfSubview:(UIView *)firstSubview withSubview:(UIView *)secondSubview multiplier:(CGFloat)multiplier;
+- (void)equalHeightOfSubview:(UIView *)firstSubview withSubview:(UIView *)secondSubview multiplier:(CGFloat)multiplier;
 
 - (void)centerInSuperview;
 - (void)centerXInSuperview;
