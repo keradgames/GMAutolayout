@@ -232,24 +232,30 @@ CGFloat const GMAutolayoutStandardFixedViewToSuperviewSpace = 20.0f;
 
 - (void)centerXInSuperview
 {
-    [self.superview addConstraint:[NSLayoutConstraint constraintWithItem:self
-                                                               attribute:NSLayoutAttributeCenterX
-                                                               relatedBy:NSLayoutRelationEqual
-                                                                  toItem:self.superview
-                                                               attribute:NSLayoutAttributeCenterX
-                                                              multiplier:1.0f
-                                                                constant:0.0f]];
+    if (self.superview)
+    {
+        [self.superview addConstraint:[NSLayoutConstraint constraintWithItem:self
+                                                                   attribute:NSLayoutAttributeCenterX
+                                                                   relatedBy:NSLayoutRelationEqual
+                                                                      toItem:self.superview
+                                                                   attribute:NSLayoutAttributeCenterX
+                                                                  multiplier:1.0f
+                                                                    constant:0.0f]];
+    }
 }
 
 - (void)centerYInSuperview
 {
-    [self.superview addConstraint:[NSLayoutConstraint constraintWithItem:self
-                                                               attribute:NSLayoutAttributeCenterY
-                                                               relatedBy:NSLayoutRelationEqual
-                                                                  toItem:self.superview
-                                                               attribute:NSLayoutAttributeCenterY
-                                                              multiplier:1.0f
-                                                                constant:0.0f]];
+    if (self.superview)
+    {
+        [self.superview addConstraint:[NSLayoutConstraint constraintWithItem:self
+                                                                   attribute:NSLayoutAttributeCenterY
+                                                                   relatedBy:NSLayoutRelationEqual
+                                                                      toItem:self.superview
+                                                                   attribute:NSLayoutAttributeCenterY
+                                                                  multiplier:1.0f
+                                                                    constant:0.0f]];
+    }
 }
 
 - (void)centerViewGroup:(NSArray *)views
